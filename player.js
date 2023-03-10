@@ -4,7 +4,7 @@ class Player {
     this.setWidth(width)
     this.setHeight(height)
     this.setXpos(x)
-    this.setXpos(y)
+    this.setYpos(y)
     this.xv = xv
     this.yv = yv
   }
@@ -25,7 +25,7 @@ class Player {
   }
   
   setYpos(y){
-    setCSSVariable("y",x + "px")
+    setCSSVariable("y",y + "px")
     this.y=y
   }
 }
