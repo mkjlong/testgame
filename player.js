@@ -9,3 +9,4 @@ class Player {
     this.powerup = type
   }
 }
+var PlayerOne = new Player(50, 50, 0, 0, 0, 0, 1)
