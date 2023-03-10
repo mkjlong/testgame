@@ -1,22 +1,31 @@
 let players = [[],[]]
 class Player {
-  constructor(h, w, x, y, xv, yv, type) {
-    this.height = h
-    this.width = w
-    this.x = x
-    this.y = y
+  constructor(width, height, x, y, xv, yv) {
+    this.setWidth(width)
+    this.setHeight(height)
+    this.setXpos(x)
+    this.setXpos(y)
     this.xv = xv
     this.yv = yv
-    this.powerup = type
   }
 
-  setWidth(){
-
+  setWidth(width){
+    setCSSVariable("width", width + "px")
+    this.width = width;
   }
 
-  setHeight(){
-    
+  setHeight(height){
+    setCSSVariable("height", height + "px")
+    this.height = height;
+  }
+
+  setXpos(x){
+    setCSSVariable("x",x + "px")
+    this.x=x
+  }
+  
+  setYpos(y){
+    setCSSVariable("y",x + "px")
+    this.y=y
   }
 }
-players[0] = new Player(50, 50, 50, 0, 0, 0, 1)
-players[1] = new Player(50, 50, -50, 0, 0, 0, 1)

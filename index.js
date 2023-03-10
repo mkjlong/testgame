@@ -1,6 +1,5 @@
-const rootElement = document.querySelector(':root');
+
+let player1 = new Player(25, 25, 50, 0, 0, 0)
+let player2 = new Player(50, 50, -50, 0, 0, 0)
 
 
-document.addEventListener("click",function(){
-    console.log("hi")
-})
