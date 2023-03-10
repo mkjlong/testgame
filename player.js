@@ -17,6 +17,7 @@ function tick(){
     for (let i; i < players.length; i++){
         players[i].y -= 1
     }
+    document.addEventListener("keyDown", )
 }
 
 setInterval(() => {
