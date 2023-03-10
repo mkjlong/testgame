@@ -9,6 +9,14 @@ class Player {
     this.yv = yv
     this.powerup = type
   }
+
+  setWidth(){
+
+  }
+
+  setHeight(){
+    
+  }
 }
 players[0] = new Player(50, 50, 50, 0, 0, 0, 1)
 players[1] = new Player(50, 50, -50, 0, 0, 0, 1)

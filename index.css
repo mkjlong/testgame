@@ -1,0 +1,13 @@
+:root{
+    --height:100;
+    --width:100;
+}
+
+#box{
+    position: absolute;
+    left:0;
+    right:0;
+    height:var(--height);
+    width:var(--width);
+    background-color: #FF0000;
+}
