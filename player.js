@@ -12,3 +12,13 @@ class Player {
 }
 players[0] = new Player(50, 50, 50, 0, 0, 0, 1)
 players[1] = new Player(50, 50, -50, 0, 0, 0, 1)
+
+function tick(){
+    for (let i; i < players.length; i++){
+        players[i].y -= 1
+    }
+}
+
+setInterval(() => {
+    tick()
+}, 0)
