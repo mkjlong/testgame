@@ -1,0 +1,18 @@
+PLAYER
+------------------
+
+- should be able to move (and shoot?)
+
+- gravity
+
+- either 2 player using WASD and arrow keys 
+
+- no multiplayer :(
+
+
+
+UI
+-----------
+
+- title screen
+- canvas as the entire screen
