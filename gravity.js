@@ -6,9 +6,14 @@ const gravity = new class{
     }
 
     start = () => {
-        this.gravitE=0;
         //console.log(this.gravitE, "asdf")
         this.interval = setInterval(() => {
+            if(player.y >= 540){
+                gravity.end();
+                this.gravitE=0;
+                player.setYpos(540)
+                return;
+            };
             //console.log(this.gravitE, "jlfas")
             this.gravitE += 2
             player.setYpos(player.y + this.gravitE)

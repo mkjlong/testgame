@@ -16,3 +16,8 @@ UI
 
 - title screen
 - canvas as the entire screen
+
+
+what is the game about
+-----------------------
+

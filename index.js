@@ -5,12 +5,8 @@ let player = new Player(100, 100, 50, 50, 0, 0)
 document.addEventListener("keydown",function(e){
     if(e.repeat)return;
     if(e.key=="w"){
-        (moveUp=()=>{
-            if(!keyMap[e.key])return;
-            move(0,-1)
-            setTimeout(moveUp,12.5)
-        })
-        moveUp();
+        gravity.start();
+        gravity.gravitE = -20;
     }
     if(e.key=="a"){
         (moveLeft=()=>{
